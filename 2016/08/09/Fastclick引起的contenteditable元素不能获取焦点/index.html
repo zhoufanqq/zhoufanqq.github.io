@@ -3,21 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>angularjs实现豆瓣web版阅读器 | 巧克力·zhou</title>
+  <title>Fastclick引起的contenteditable元素不能获取焦点 | 巧克力·zhou</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###使用angularjs实现豆瓣阅读器###首先豆瓣阅读器是这样的也可以是这样的(不同分辨率的尺寸能自适应)">
+  <meta name="description" content="在项目中有个需求是添加tag，为了装个叉，解决input只能定宽的问题，我决定用div模拟input框，实现输入区域能随文字宽度增加而增加的效果。
+
+问题：在移动端（Ios和Android）具有contenteditable=true属性的div不能获取到焦点，但在pc端正常。分析：问题出现在移动端，说明应该是兼容性问题。而contenteditable属性连IE6，Safari3.2都能支持，所">
 <meta property="og:type" content="article">
-<meta property="og:title" content="angularjs实现豆瓣web版阅读器">
-<meta property="og:url" content="http://yoursite.com/2015/09/17/angularjs实现豆瓣web版阅读器/index.html">
+<meta property="og:title" content="Fastclick引起的contenteditable元素不能获取焦点">
+<meta property="og:url" content="http://yoursite.com/2016/08/09/Fastclick引起的contenteditable元素不能获取焦点/index.html">
 <meta property="og:site_name" content="巧克力·zhou">
-<meta property="og:description" content="###使用angularjs实现豆瓣阅读器###首先豆瓣阅读器是这样的也可以是这样的(不同分辨率的尺寸能自适应)">
-<meta property="og:image" content="http://7xluz9.com1.z0.glb.clouddn.com/20150917111031.png">
-<meta property="og:image" content="http://7xluz9.com1.z0.glb.clouddn.com/QQ截图20150917111811.png">
-<meta property="og:image" content="http://7xluz9.com1.z0.glb.clouddn.com/QQ截图20150917114540.png">
-<meta property="og:updated_time" content="2015-09-30T06:17:30.801Z">
+<meta property="og:description" content="在项目中有个需求是添加tag，为了装个叉，解决input只能定宽的问题，我决定用div模拟input框，实现输入区域能随文字宽度增加而增加的效果。
+
+问题：在移动端（Ios和Android）具有contenteditable=true属性的div不能获取到焦点，但在pc端正常。分析：问题出现在移动端，说明应该是兼容性问题。而contenteditable属性连IE6，Safari3.2都能支持，所">
+<meta property="og:image" content="http://assets.juparty.cn/QQ%E6%88%AA%E5%9B%BE20160809110307.png">
+<meta property="og:updated_time" content="2016-08-09T03:22:20.357Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="angularjs实现豆瓣web版阅读器">
-<meta name="twitter:description" content="###使用angularjs实现豆瓣阅读器###首先豆瓣阅读器是这样的也可以是这样的(不同分辨率的尺寸能自适应)">
+<meta name="twitter:title" content="Fastclick引起的contenteditable元素不能获取焦点">
+<meta name="twitter:description" content="在项目中有个需求是添加tag，为了装个叉，解决input只能定宽的问题，我决定用div模拟input框，实现输入区域能随文字宽度增加而增加的效果。
+
+问题：在移动端（Ios和Android）具有contenteditable=true属性的div不能获取到焦点，但在pc端正常。分析：问题出现在移动端，说明应该是兼容性问题。而contenteditable属性连IE6，Safari3.2都能支持，所">
   
     <link rel="alternative" href="/atom.xml" title="巧克力·zhou" type="application/atom+xml">
   
@@ -198,11 +202,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-angularjs实现豆瓣web版阅读器" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Fastclick引起的contenteditable元素不能获取焦点" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/09/17/angularjs实现豆瓣web版阅读器/" class="article-date">
-  	<time datetime="2015-09-17T06:51:47.000Z" itemprop="datePublished">2015-09-17</time>
+      <a href="/2016/08/09/Fastclick引起的contenteditable元素不能获取焦点/" class="article-date">
+  	<time datetime="2016-08-09T02:51:02.000Z" itemprop="datePublished">2016-08-09</time>
 </a>
     </div>
   
@@ -215,7 +219,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      angularjs实现豆瓣web版阅读器
+      Fastclick引起的contenteditable元素不能获取焦点
     </h1>
   
 
@@ -224,7 +228,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/angularjs/">angularjs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fis/">fis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/豆瓣阅读器/">豆瓣阅读器</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Fastclick/">Fastclick</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/contenteditable/">contenteditable</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/div/">div</a></li></ul>
 	</div>
 
         
@@ -235,21 +239,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###使用angularjs实现豆瓣阅读器###<br>首先豆瓣阅读器是这样的<img src="http://7xluz9.com1.z0.glb.clouddn.com/20150917111031.png" alt="">也可以是这样的(<strong>不同分辨率的尺寸能自适应</strong>)<br><a id="more"></a><br><img src="http://7xluz9.com1.z0.glb.clouddn.com/QQ截图20150917111811.png" alt="">  <img src="http://7xluz9.com1.z0.glb.clouddn.com/QQ截图20150917114540.png" alt=""></p>
+        <p>在项目中有个需求是添加tag，为了装个叉，解决input只能定宽的问题，我决定用div模拟input框，实现输入区域能随文字宽度增加而增加的效果。<br><img src="http://assets.juparty.cn/QQ%E6%88%AA%E5%9B%BE20160809110307.png" alt="项目截图"></p>
 <hr>
-<p>在移动端不同尺寸下，豆瓣阅读器都能很好的适应，文字、图片没有被切割，掩盖的情况。要实现这种功能最基本的是容器高度大于等于内容高度。然而一般容器尺寸根据手机屏幕尺寸固定不变，但内容高度根据内容不同而不同。你可能觉得矮油，小问题嘛，一个属性值就解决了嘛。但是…</p>
-<p><strong>如果内容高度超过了容器高度怎么办？截呗…</strong></p>
-<ul>
-<li>容器高568px，内容高度588px超出20px，这20px需要截取<br>&emsp;&emsp;如果本页末尾是图片，截取图片肯定不行，图片需要在页面完整显示，只能缩放不能截取<br>&emsp;&emsp;如果末尾是文字，那截取部分需要在下一页显示，而且显示的文字要能和上一页对应，不能有重复、漏掉的部分否则会影响阅读</li>
-<li>章节之间强制分页</li>
-</ul>
-<p><strong>因为改变容器大小，豆瓣阅读的文章页码都不同，可见其为实时渲染的页面。在页面加载时，将数据全部插入页面，获取其高度，然后一次循环，当内容高度大于等于容器高度时分页。</strong></p>
-<ul>
-<li>如果遇到pagebreak，强制分页</li>
-<li>如果末尾是图片则将图片插入下一页，分页</li>
-<li>如果末尾是文字，则本页插入这个段落，下一页也插入这个段落，下一页中隐藏上一页的已经显示的内容</li>
-</ul>
-<p><a href="https://github.com/zhoufanqq/doubanread" target="_blank" rel="external">GitHub地址</a><br><a href="http://doubanread.sinaapp.com/#/app/index" target="_blank" rel="external">demo地址</a></p>
+<p>问题：<br>在移动端（Ios和Android）具有contenteditable=true属性的div不能获取到焦点，但在pc端正常。<br>分析：<br>问题出现在移动端，说明应该是兼容性问题。而contenteditable属性连IE6，Safari3.2都能支持，所以应该不是浏览器实现的兼容性问题<br>结果：<br>在一片Google中，我发现了这篇文章 <a href="https://github.com/ftlabs/fastclick/pull/449" target="_blank" rel="external">Adding the fix where tap to focus now works on contenteditable elements.</a>。<br>Fastclick在touchend事件触发时使用document.createEvent触发click事件来解决click在移动端的延迟，同时拦截原生的click事件。这样div就获取不到原生的click事件，focus也失效。这也是为什么pc端没问题，因为pc端没有touch事件啊啊啊啊。。。。</p>
 
       
     </div>
@@ -259,18 +251,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/09/17/Scrapy爬取豆瓣阅读免费图书内容/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Scrapy爬取豆瓣阅读免费图书内容
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/03/02/前端优化及前后端分离初涉/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">前端优化及前后端分离初涉</div>
+    <a href="/2015/09/30/使用php-screw对php文件进行加密/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用php_screw对php文件进行加密</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -299,7 +282,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="angularjs实现豆瓣web版阅读器" data-title="angularjs实现豆瓣web版阅读器" data-url="http://yoursite.com/2015/09/17/angularjs实现豆瓣web版阅读器/"></div>
+	<div class="ds-thread" data-thread-key="Fastclick引起的contenteditable元素不能获取焦点" data-title="Fastclick引起的contenteditable元素不能获取焦点" data-url="http://yoursite.com/2016/08/09/Fastclick引起的contenteditable元素不能获取焦点/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
