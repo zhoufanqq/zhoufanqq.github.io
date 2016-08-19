@@ -13,7 +13,7 @@
 <meta property="og:description" content="在模仿饿了么前端的项目中，商家菜品初始化是由后台字段控制的，所以需要前端在dom渲染时判断并修改菜品的数据。">
 <meta property="og:image" content="http://assets.juparty.cn/QQ%E6%88%AA%E5%9B%BE20160819154221.png">
 <meta property="og:image" content="http://assets.juparty.cn/QQ%E6%88%AA%E5%9B%BE20160819154636.png">
-<meta property="og:updated_time" content="2016-08-19T07:54:15.043Z">
+<meta property="og:updated_time" content="2016-08-19T07:57:52.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vuex中getters作用时间问题">
 <meta name="twitter:description" content="在模仿饿了么前端的项目中，商家菜品初始化是由后台字段控制的，所以需要前端在dom渲染时判断并修改菜品的数据。">
@@ -235,7 +235,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>在模仿饿了么前端的项目中，商家菜品初始化是由后台字段控制的，所以需要前端在dom渲染时判断并修改菜品的数据。<br><img src="http://assets.juparty.cn/QQ%E6%88%AA%E5%9B%BE20160819154221.png" alt="项目截图"><br><a id="more"></a><br>我采用的方法是在ready钩子函数中使用$set函数设置菜品数据。但是前提是所有商品数据（包括菜品，描述，库存等）是通过vuex管理，所以，这里需要vuex的getters进行处理</p>
-<p><img src="http://assets.juparty.cn/QQ%E6%88%AA%E5%9B%BE20160819154636.png" alt="项目截图"><br>根据vue的生命周期图，在ready钩子函数调用时编译已经结束，$el第一次插入时调用。如果不使用vuex，那么数据应该都赋值完成了，但使用了vuex中的getters，此时，数据并不一定处理完毕。所以，为了实现动态赋值菜品的功能，这里使用了$watch函数监控本地变量</p>
+<p><img src="http://assets.juparty.cn/QQ%E6%88%AA%E5%9B%BE20160819154636.png" alt="项目截图"><br>根据vue的生命周期图，在ready钩子函数调用时编译已经结束，\$el第一次插入时调用。如果不使用vuex，那么数据应该都赋值完成了，但使用了vuex中的getters，此时，数据并不一定处理完毕。所以，为了实现动态赋值菜品的功能，这里使用了\$watch函数监控本地变量</p>
 
       
     </div>
